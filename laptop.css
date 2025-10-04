@@ -1,0 +1,25 @@
+@media (max-width: 900px) and (min-width: 651px) {
+  .about-left {
+    float: left;
+    width: 55%;      
+    margin-right: 5%; 
+    text-align: center;
+  }
+
+  .about-right {
+    float: left;
+    width: 40%;      
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .about h2 { font-size: 1.8rem; }
+  .about-right p { font-size: 0.95rem; }
+
+  .intro-video {
+    width: 100%;
+    max-height: 300px; 
+    object-fit: cover;
+  }
+}
