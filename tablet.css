@@ -1,13 +1,19 @@
+@media (max-width: 650px) {
 
-@media (max-width: 900px) and (min-width: 651px) {  
   .about-text, .about-image, .about-left, .about-right {
     float: none;
     width: 100%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     text-align: center;
   }
 
-  .about-text h1 { font-size: 1.8rem; }
-  .about-text h2 { font-size: 1.2rem; }
-  .about-right { font-size: 0.95rem; }
+  .about-text h1 { font-size: 1.6rem; }
+  .about-text h2 { font-size: 1rem; }
+  .about-right { font-size: 0.9rem; }
+
+  .intro-video {
+    width: 100%;
+    max-height: 220px; 
+    object-fit: cover;
+  }
 }
