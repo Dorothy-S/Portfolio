@@ -1,0 +1,368 @@
+/*home page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { /*page background*/
+  background-color: #1c1c1f;
+  color: #c1c1c4;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-image:
+    linear-gradient(#2a2a2e 1px, transparent 1px),
+    linear-gradient(90deg, #2a2a2e 1px, transparent 1px);
+  background-size: 40px 40px;
+  line-height: 1.6;
+}
+
+ /*header*/
+header {
+  background: rgba(28,28,32,0.9);
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+ /*DS*/
+header .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+
+
+header .logo span {
+  color: #3bb89e;
+}
+
+nav { /* navigation bar position*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+nav ul li {  /*navigation bar section position */
+  display: inline-block;
+  margin: 0 12px;
+}
+
+nav ul li a { /*navigation bar section words */
+  text-decoration: none;
+  font-weight: 500;
+  color: #b5b5b8;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+nav ul li a::after { /*hover over the section word*/
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #3bb89e;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #3bb89e;
+}
+
+
+section { /*padding for about me section */
+  padding: 60px 8%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-section { /*centering about section */
+  text-align: center;
+}
+
+.about-text { /*about me section horzantal*/
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.about-image { /*makes image perfect size*/
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.about-text h1 { /*makes header bigger */
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e2e2e5;
+}
+
+.about-text h2 { /*makes secound header bigger */
+  font-size: 1.4rem;
+  color: #3bb89e;
+  margin-bottom: 18px;
+}
+
+.about-text p { /*makes writen part colour */
+  color: #a5a5a8;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.about-image img { /*profile picture size and shape*/
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+
+.social-links a { /*social media button style*/
+  display: inline-block;
+  margin: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #3bb89e, #6496d6);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-links a:hover { /*social media button hover*/
+  opacity: 0.9;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/* About Me Page */
+.about { 
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 8%;
+}
+
+.about h2 { /* about me title */
+  font-size: 2rem;
+  color: #e2e2e5;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-wrapper { /*makes the layout */
+  overflow: hidden; 
+}
+
+.about-left { /*sets video in right position */
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.intro-video { /*video size and shape*/
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+
+.about-right { /*about me text position and colour*/
+  float: left;
+  width: 48%;
+  color: #c1c1c4;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.experience-section { /*experience section styling */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(38,38,42,0.96);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+}
+
+.experience-section h2 { /*experience section title */
+  font-size: 1.8rem;
+  color: #eee;
+  margin-bottom: 20px;
+  border-left: 3px solid #3bb89e;
+  padding-left: 8px;
+}
+
+.timeline { /*timeline structure */
+  border-left: 2px solid #3bb89e;
+  margin-left: 12px;
+  padding-left: 14px;
+}
+ 
+.exp-entry {  /*adds the dot on the timeline line */
+  margin-bottom: 20px; 
+  position: relative;
+}
+
+.exp-entry .dot { /*the dot */
+  width: 14px;
+  height: 14px;
+  background: #3bb89e;
+  border-radius: 50%;
+  position: absolute;
+  left: -22px;
+  top: 6px;
+}
+
+.exp-content { /*structing*/
+  background: #25252a;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.exp-content h3 { /*job title */
+  font-size: 1rem;
+  color: #3bb89e;
+  margin-bottom: 4px;
+}
+
+.exp-content h3 span {  /*job date */
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-left: 6px;
+}
+
+.exp-content .place { /*ontario tech */
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.exp-content ul { /*job description */
+  list-style: disc inside;
+  color: #b5b5b8;
+  font-size: 0.9rem;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*  Projects Section  */
+.projects-grid { /*make sa grid for projects */
+  margin-top: 40px;
+  text-align: center;
+}
+
+.card { /*project card styling */
+  display: inline-block;
+  width: 280px;
+  background: rgba(40,40,46,0.9);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.card h2 a { /*project title styling */
+  color: #6496d6;
+  text-decoration: none;
+}
+
+.card h2 a:hover {  /*project title hover*/
+  color: #3bb89e;
+}
+
+.card p { /*project description styling */
+  margin: 12px 0;
+  color: #aaa;
+}
+
+.tags { /*further project tags */
+  margin-top: 10px;
+}
+
+.lang { /*project tag styling */
+  display: inline-block;
+  margin: 3px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  background: #333;
+  color: #ccc;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*  Contact Page  */
+.contact-card { /*contact form styling */
+  background: rgba(40,40,46,0.95);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-card h2 { /*contact form title */
+  color: #3bb89e;
+  margin-bottom: 12px;
+}
+
+.contact-card input, /*contact form input structure */
+.contact-card textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #121214;
+  color: #eee;
+  margin: 8px auto;
+  display: block;
+}
+
+.contact-card button { /*sumbit button */
+  padding: 12px;
+  background: linear-gradient(90deg, #3bb89e, #6496d6);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.contact-card button:hover { /*submit button hover*/
+  opacity: 0.9;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*  Footer  */
+footer {
+  background: #121214;
+  text-align: center;
+  padding: 18px;
+  color: #777;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
