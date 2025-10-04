@@ -1,0 +1,16 @@
+@media (max-width: 650px) {
+  body { font-size: 14px; }
+
+  nav ul li { display: block; margin: 5px 0; }
+
+  .about-text, .about-image, .about-left, .about-right {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .about-text h1 { font-size: 1.6rem; }
+  .about-text h2 { font-size: 1rem; }
+  .about-right { font-size: 0.9rem; }
+}
