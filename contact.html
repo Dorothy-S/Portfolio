@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>D<span>S</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-section">
+      <div class="contact-card">
+        <h2>Contact Me</h2>
+        <p>Send a message below or email directly:<br /><span class="email">Dorothy@gmail.com</span></p>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+          <label for="cell">Phone No.</label>
+          <input type="tel" name="cell" id="cell"  placeholder="XXX-XXX-XXX" required />
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
